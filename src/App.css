@@ -1,0 +1,82 @@
+/*  Shared  */
+/*  Header & nav bar  */
+
+/* @media inspired by W3Schools: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.nav-item .nav-link {
+  color: rgb(255, 0, 0);
+  font-weight: 550;
+}
+
+.nav-item:hover .nav-link {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.header-container {
+  text-align: left;
+}
+
+.header-img,
+.header-title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+}
+
+.header-img {
+  height: 2rem;
+  margin-right: 10px;
+}
+
+.common-page-title {
+  font-family: Impact;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+/*  HomePage  */
+#home-con {
+  padding: 1rem;
+}
+
+#home-title {
+  font-family: Impact;
+  font-style: italic;
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: 2rem;
+}
+
+.tooltipClass {
+  background-color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+}
+
+/*  EditDriverPage  */
+#edit-driver-page {
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 1rem;
+  border-style: dashed;
+  padding: 20px;
+  margin-bottom: 3rem;
+}
+
+/*  QuizPage  */
+#quiz-section {
+  padding: 2rem;
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+  #quiz-section {
+    width: 100%;
+  }
+}
