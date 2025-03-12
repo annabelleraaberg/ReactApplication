@@ -11,8 +11,7 @@ This is the frontend part of the Formula1 project, built using React, Javascript
 2. If running backend at the same time:
    ```bash
    dotnet run
-   
-   ```bash
+
    dotnet watch
 
 3. Run frontend app:
