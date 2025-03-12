@@ -1,27 +1,44 @@
-# React + TypeScript + Vite
+# React Application for Formula1 project 🏎️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend part of the Formula1 project, built using React, Javascript and TypeScript. The app allows users to interact with different pages. The backend is powered by C# and .NET (https://github.com/annabelleraaberg/Formula1API.git).
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Install the required dependencies:
+   ```bash
+   npm install
 
-## Expanding the ESLint configuration
+2. If running backend at the same time:
+   ```bash
+   dotnet run
+   ```bash
+   dotnet watch
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3. Run frontend app:
+   ```bash
+   npm run dev
+**Note**: press O to open in browser.
 
-- Configure the top-level `parserOptions` property like this:
+## Features
+* **Home Page**
+   * **Show Driver Page**: Displays information about drivers. It contains a search interface where users can search for drivers either by their ID or their name.
+* **Search page**: UI for searching for a driver by name from a list of drivers.
+   * Displays list of drivers with their details. 
+* **Edit Driver Page**: Admin interface for managing drivers.
+   * Add driver: name, age, nationality, image. 
+   * Edit driver
+   * Delete driver
+   * List of all drivers
+* **Game Page**: Quiz to test knowledge of Formula 1 drivers.
+   * Randomized order
+   * Multi-choice options
+   * Questions about ranking, age and nationality
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Tech Stack
+* React
+* JavaScript/TypeScript
+* Bootstrap
+* Axios
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Architecture
+* MVC architecture
